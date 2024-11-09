@@ -1,0 +1,5 @@
+# ninja log v5
+772	1048	7528917525264769	Projects.exe	4d635b44461663f8
+7	771	7528917522574765	CMakeFiles/Projects.dir/main.cpp.obj	f5a49af5674af0a8
+8	855	7528915565983801	CMakeFiles/Projects.dir/triangle.cpp.obj	24ec88b3e4db853e
+5	431	7528922981831869	build.ninja	1caa84fc85a276b0

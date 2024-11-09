@@ -1,0 +1,3 @@
+C:/Users/David/Documents/Homework/2nd Year University/Fall Semester/Data Structures and Algorithms/Projects/Final Project/cmake-build-debug/CMakeFiles/Projects.dir
+C:/Users/David/Documents/Homework/2nd Year University/Fall Semester/Data Structures and Algorithms/Projects/Final Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/David/Documents/Homework/2nd Year University/Fall Semester/Data Structures and Algorithms/Projects/Final Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
