@@ -6,7 +6,12 @@
 using namespace std;
 
 /// ===== CONSTRUCTORS =====
-// Default Constructor
+/* Default Constructor
+ *
+ * Create a white triangle with all its points at (0, 0).
+ *
+ * Parameters: None.
+ */
 triangle::triangle() {
     points.reserve(3);
     for (auto& point : points) {
@@ -19,7 +24,19 @@ triangle::triangle() {
     middle_point_up = false;
 }
 
-// Parameterized Constructor
+
+/* Parameterized Integer Constructor
+ *
+ * Create a white triangle with its points set at different locations throughout the scene.
+ *
+ * Parameters:
+ * - The x coordinate of the first vertex.      (Integer)
+ * - The y coordinate of the first vertex.      (Integer)
+ * - The x coordinate of the second vertex.     (Integer)
+ * - The y coordinate of the second vertex.     (Integer)
+ * - The x coordinate of the third vertex.      (Integer)
+ * - The y coordinate of the third vertex.      (Integer)
+ */
 triangle::triangle(int x1=0, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0) {
     // Create the vertices of the triangle.
     points.reserve(3);
@@ -42,6 +59,14 @@ triangle::triangle(int x1=0, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0) {
     calculate_middle_orientation();
 }
 
+
+/* Parameterized Vector Constructor
+ *
+ * Create a white triangle with its points set at different locations throughout the scene.
+ *
+ * Parameters:
+ * - An organized collection of all three vertices in the triangle.  (Vector of pairs of integers)
+ */
 triangle::triangle(vector<pair<int, int>> _points) {
     // Create the vertices of the triangle.
     points.reserve(3);
@@ -62,7 +87,22 @@ triangle::triangle(vector<pair<int, int>> _points) {
     calculate_middle_orientation();
 }
 
-// Parameterized Constructor with Color
+
+/* Parameterized Integer Constructor with Color
+ *
+ * Create a colored triangle with its points set at different locations throughout the scene.
+ *
+ * Parameters:
+ * - The x coordinate of the first vertex.      (Integer)
+ * - The y coordinate of the first vertex.      (Integer)
+ * - The x coordinate of the second vertex.     (Integer)
+ * - The y coordinate of the second vertex.     (Integer)
+ * - The x coordinate of the third vertex.      (Integer)
+ * - The y coordinate of the third vertex.      (Integer)
+ * - The red value of the triangle.             (Unsigned character)
+ * - The green value of the triangle.           (Unsigned character)
+ * - The blue value of the triangle.            (Unsigned character)
+ */
 triangle::triangle(int x1=0, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0,
                    unsigned char red=0, unsigned char green=0, unsigned char blue=0) {
     // Create the vertices of the triangle.
@@ -86,6 +126,15 @@ triangle::triangle(int x1=0, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0,
     calculate_middle_orientation();
 }
 
+
+/* Parameterized Vector Constructor with color.
+ *
+ * Create a colored triangle with its points set at different locations throughout the scene.
+ *
+ * Parameters:
+ * - An organized collection of all three vertices in the triangle. (Vector of pairs of integers)
+ * - An RGB sequence of numbers.                                    (Vector of unsigned characters)
+ */
 triangle::triangle(vector<pair<int, int>> _points, vector<unsigned char> _colors) {
     // Create the vertices of the triangle.
     points.reserve(3);
@@ -141,7 +190,9 @@ void triangle::sort_points() {
  *
  * This function calculates the slope between two different points.
  *
- * Parameters: Point a (Pair of integers), point b.  (Pair of integers)
+ * Parameters:
+ * - Point A.   (Pair of integers)
+ * - Point B.   (Pair of integers)
  * Returns: The slope of the two points.  (Float)
  */
 float triangle::calculate_slope(pair<int, int> a, pair<int, int> b) {
@@ -183,7 +234,9 @@ bool triangle::calculate_middle_orientation() {
  *
  * This function takes in two coordinates and checks whether the coordinates are within the triangle.
  *
- * Parameters: The point's x position and its y position.  (Integers)
+ * Parameters:
+ * - The point's x position.    (Integer)
+ * - The point's y position.    (Integer)
  * Returns: Whether the point is within the triangle.  (Boolean)
  */
 bool triangle::point_in_bounds(int x, int y) {
@@ -241,21 +294,38 @@ bool triangle::point_in_bounds(int x, int y) {
     }
 }
 
+
+/* Point In Bounds
+ *
+ * This function takes in two coordinates and checks whether the coordinates are within the triangle.
+ *
+ * Parameters:
+ * - The point's x and y position.  (Pair of integers)
+ * Returns: Whether the point is within the triangle.   (Boolean)
+ */
 bool triangle::point_in_bounds(pair<int, int> point) {
     return point_in_bounds(point.first, point.second);
 }
 
-/* Getter Functions
+
+/* Get Points
  *
- * These functions get private triangle variables and returns them for external use.
+ * Return the points for external use.
  *
  * Parameters: None.
- * Returns: It depends.
+ * Returns: The triangle's vertices.    (Vector of pairs of integers)
  */
 vector<pair<int, int>> triangle::get_points() {
     return points;
 }
 
+/* Get Colors
+ *
+ * Return the colors for external use.
+ *
+ * Parameters: None.
+ * Returns: The triangle's colors.  (Pointer to an array of unsigned characters)
+ */
 unsigned char* triangle::get_colors() {
     return colors;
 }
@@ -263,6 +333,12 @@ unsigned char* triangle::get_colors() {
 /* Set colors
  *
  * Change the triangle's colors to something else.
+ *
+ * Parameters:
+ * - The new value for red.     (Unsigned character)
+ * - The new value for green.   (Unsigned character)
+ * - The new value for blue.    (Unsigned character)
+ * Returns: None.
  */
 void triangle::set_colors(unsigned char red, unsigned char green, unsigned char blue) {
     colors[0] = red;
