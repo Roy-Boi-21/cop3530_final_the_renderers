@@ -1,8 +1,10 @@
 #include <iostream>
-#include "triangle.h"
+#include "scene.h"
 using namespace std;
 
 int main() {
+    /// ===== TRIANGLE TESTS =====
+    /*
     cout << "=== Pointing up Triangle Test ===" << endl;
     triangle upside(100,0, 50,100, 0,0);
     cout << "Passing: " << endl;
@@ -62,5 +64,20 @@ int main() {
     cout << "- Locations beyond the vertical line: " << endl;
     cout << right.point_in_bounds(100, -1) << endl;
     cout << right.point_in_bounds(100, 101) << endl;
+     */
+
+    /// ===== SCENE TESTS =====
+    /*
+    scene image(0, 100, 0, 100);
+    cout << image.get_triangle_count() << endl;
+    image.generate_triangle();
+    image.generate_triangle();
+    image.generate_triangle();
+    cout << image.get_triangle_count() << endl;
+    image.clear_scene();
+    image.generate_triangle();
+    cout << image.get_triangle_count() << endl;
+     */
+
     return 0;
 }

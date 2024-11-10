@@ -52,3 +52,51 @@ scene::scene(pair<int, int> x_bounds, pair<int, int> y_bounds) {
     y_boundary.second = y_bounds.second;
 }
 
+
+/// ===== CLASS FUNCTIONS =====
+/* Generate Triangle
+ *
+ * Randomly generate a triangle for to add to the scene.
+ *
+ * Parameters: None.
+ * Returns: None.
+ */
+void scene::generate_triangle() {
+    // Randomly generate a triangle's vertices.
+    unsigned seed = chrono::system_clock::now().time_since_epoch().count();
+    mt19937 generator(seed);
+    vector<pair<int, int>> vertices;
+    for (int i = 0; i < 3; i++) {
+        int x = int(generator() % (x_boundary.second - x_boundary.first)) + x_boundary.first;
+        int y = int(generator() % (y_boundary.second - y_boundary.first)) + y_boundary.first;
+        vertices.emplace_back(x, y);
+    }
+
+    // Create the triangle and add it to the scene.
+    triangle new_triangle(vertices);
+    triangles[triangles.size()] = new_triangle;
+}
+
+
+/* Clear Scene
+ *
+ * Remove every triangle from the scene.
+ *
+ * Parameters: None.
+ * Returns: None.
+ */
+void scene::clear_scene() {
+    triangles.clear();
+}
+
+
+/* Get Triangle Count
+ *
+ * Return how many triangles are in the scene.
+ *
+ * Parameters: None.
+ * Returns: The amount of triangles in the scene.  (Unsigned integer)
+ */
+unsigned int scene::get_triangle_count() {
+    return triangles.size();
+}

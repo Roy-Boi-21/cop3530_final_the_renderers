@@ -6,7 +6,9 @@
 #define PROJECTS_SCENE_H
 
 #include "triangle.h"
+#include <chrono>
 #include <map>
+#include <random>
 
 class scene {
     // Class variables.
@@ -20,7 +22,9 @@ public:
     scene(pair<int, int> x_bounds, pair<int, int> y_bounds);
 
     // Class functions.
-
+    void generate_triangle();
+    void clear_scene();
+    unsigned int get_triangle_count();
 };
 
 
