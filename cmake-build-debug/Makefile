@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\roybo\OneDrive\Documents\Sophomore Year\COP3530\Projects\cop3530_final_the_renderers"
+CMAKE_SOURCE_DIR = C:\Users\cynth\cop3530_final_the_renderers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\roybo\OneDrive\Documents\Sophomore Year\COP3530\Projects\cop3530_final_the_renderers\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\cynth\cop3530_final_the_renderers\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = "C:\Users\roybo\OneDrive\Documents\Sophomore Year\COP3530\Pro
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\roybo\OneDrive\Documents\Sophomore Year\COP3530\Projects\cop3530_final_the_renderers\cmake-build-debug\CMakeFiles" "C:\Users\roybo\OneDrive\Documents\Sophomore Year\COP3530\Projects\cop3530_final_the_renderers\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cynth\cop3530_final_the_renderers\cmake-build-debug\CMakeFiles C:\Users\cynth\cop3530_final_the_renderers\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\roybo\OneDrive\Documents\Sophomore Year\COP3530\Projects\cop3530_final_the_renderers\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cynth\cop3530_final_the_renderers\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,19 @@ Projects/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projects.dir\build.make CMakeFiles/Projects.dir/build
 .PHONY : Projects/fast
 
+#=============================================================================
+# Target rules for targets named ray_tracing
+
+# Build rule for target.
+ray_tracing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ray_tracing
+.PHONY : ray_tracing
+
+# fast build rule for target.
+ray_tracing/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ray_tracing.dir\build.make CMakeFiles/ray_tracing.dir/build
+.PHONY : ray_tracing/fast
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -151,6 +164,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projects.dir\build.make CMakeFiles/Projects.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+ray_tracing.obj: ray_tracing.cpp.obj
+.PHONY : ray_tracing.obj
+
+# target to build an object file
+ray_tracing.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projects.dir\build.make CMakeFiles/Projects.dir/ray_tracing.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ray_tracing.dir\build.make CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj
+.PHONY : ray_tracing.cpp.obj
+
+ray_tracing.i: ray_tracing.cpp.i
+.PHONY : ray_tracing.i
+
+# target to preprocess a source file
+ray_tracing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projects.dir\build.make CMakeFiles/Projects.dir/ray_tracing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ray_tracing.dir\build.make CMakeFiles/ray_tracing.dir/ray_tracing.cpp.i
+.PHONY : ray_tracing.cpp.i
+
+ray_tracing.s: ray_tracing.cpp.s
+.PHONY : ray_tracing.s
+
+# target to generate assembly for a file
+ray_tracing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projects.dir\build.make CMakeFiles/Projects.dir/ray_tracing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ray_tracing.dir\build.make CMakeFiles/ray_tracing.dir/ray_tracing.cpp.s
+.PHONY : ray_tracing.cpp.s
 
 scene.obj: scene.cpp.obj
 .PHONY : scene.obj
@@ -209,9 +249,13 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Projects
+	@echo ... ray_tracing
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... ray_tracing.obj
+	@echo ... ray_tracing.i
+	@echo ... ray_tracing.s
 	@echo ... scene.obj
 	@echo ... scene.i
 	@echo ... scene.s
