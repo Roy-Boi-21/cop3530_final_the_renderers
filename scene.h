@@ -25,6 +25,11 @@ public:
     void generate_triangle();
     void clear_scene();
     unsigned int get_triangle_count();
+
+    // Getter functions.
+    map<unsigned int, triangle> get_triangles();
+    pair<int, int> get_x_boundary();
+    pair<int, int> get_y_boundary();
 };
 
 

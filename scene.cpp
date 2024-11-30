@@ -100,3 +100,17 @@ void scene::clear_scene() {
 unsigned int scene::get_triangle_count() {
     return triangles.size();
 }
+
+
+/// ===== GETTER FUNCTIONS =====
+map<unsigned int, triangle> scene::get_triangles() {
+    return triangles;
+}
+
+pair<int, int> scene::get_x_boundary() {
+    return x_boundary;
+}
+
+pair<int, int> scene::get_y_boundary() {
+    return y_boundary;
+}

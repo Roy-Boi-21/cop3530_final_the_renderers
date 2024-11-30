@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Projects::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Projects-Debug-43c7689b16714ee56cba.json",
+					"jsonFile" : "target-Projects-Debug-0f5d92b35b3327d989f4.json",
 					"name" : "Projects",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/David/Documents/Homework/2nd Year University/Fall Semester/Data Structures and Algorithms/Projects/Final Project/cmake-build-debug",
-		"source" : "C:/Users/David/Documents/Homework/2nd Year University/Fall Semester/Data Structures and Algorithms/Projects/Final Project"
+		"build" : "C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug",
+		"source" : "C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers"
 	},
 	"version" : 
 	{
