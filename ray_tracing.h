@@ -23,7 +23,7 @@ public:
     explicit ray_tracing(scene src);
 
     // Class functions
-    sf::Image render();
+    sf::Image render(sf::Color backgrorund_color);
 };
 
 

@@ -1,6 +1,6 @@
 #include <iostream>
-//#include <filesystem>
-//#include <SFML/Graphics/Image.hpp>
+#include <filesystem>
+#include <SFML/Graphics/Image.hpp>
 #include "scene.h"
 #include "ray_tracing.h"
 using namespace std;
@@ -91,9 +91,11 @@ int main() {
     for (auto triangle : triangles) {
         cout << triangle.second.get_points().size() << endl;
     }
-    /*
+
+    // Rendering
     ray_tracing ray_tracing(image);
-    sf::Image result = ray_tracing.render();
+    sf::Color background_color(255,255,0);
+    sf::Image result = ray_tracing.render(background_color);
 
     // Saving result
     sf::Vector2u size = result.getSize();
@@ -119,6 +121,6 @@ int main() {
         std::cout << "Ray tracing rendering saved as \"ray_tracing.png\"" << std::endl;
     } else {
         std::cerr << "Failed attempt to save ray tracing rendering" << std::endl;
-    }*/
+    }
     return 0;
 }

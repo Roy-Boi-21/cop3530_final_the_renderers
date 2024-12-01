@@ -27,7 +27,7 @@ ray_tracing::ray_tracing(scene src) {
     rendering.create(width, height, fillColor);
 }
 
-sf::Image ray_tracing::render() {
+sf::Image ray_tracing::render(sf::Color background_color) {
     //Iterate each pixel
     for(int y=0; y<width; y++){
         for(int x=0; x<height; x++){
@@ -35,10 +35,17 @@ sf::Image ray_tracing::render() {
             //Assuming triangles is in layer order
             for(int current = 0; current < triangle_count; current++){
                 triangle current_triangle = triangles[current];
+                rendering.setPixel(x, y, background_color);
                 if(current_triangle.point_in_bounds(x, y)){
                     unsigned char* triangleColor = current_triangle.get_colors();
                     sf::Color pixel_color(triangleColor[0], triangleColor[1], triangleColor[2]);
                     rendering.setPixel(x, y, pixel_color);
+                    // Debugging
+                    cout<<"Triangle #"<<current<<" at pixel ("<<x<<", "<<y<<") Set to color ";
+                    for (int i = 0; i < 3; ++i) {
+                        cout << static_cast<int>(triangleColor[i])<<" ";
+                    }
+                    cout<<endl;
                     break;
                 }
             }
