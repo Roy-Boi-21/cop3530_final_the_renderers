@@ -3,7 +3,8 @@ project(Projects)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SFML_DIR "C:/SFML")
+set(SFML_DIR "C:/Libraries/SFML-2.5.1/lib/cmake/SFML")
+#set(SFML_DIR "C:/SFML")
 #set(SFML_STATIC_LIBRARIES TRUE)
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
