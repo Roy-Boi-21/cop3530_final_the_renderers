@@ -71,8 +71,7 @@ triangle::triangle(vector<pair<int, int>> _points) {
     // Create the vertices of the triangle.
     points.reserve(3);
     for (int i = 0; i < 3; i++) {
-        points[i].first = _points[i].second;
-        points[i].second = _points[i].second;
+        points.emplace_back(_points[i].first, _points[i].second);
     }
 
     // Sort the vertices so that the leftmost vertex is at the start and the rightmost vertex is at the end.
