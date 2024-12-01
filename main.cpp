@@ -1,5 +1,8 @@
 #include <iostream>
+#include <filesystem>
+#include <SFML/Graphics/Image.hpp>
 #include "scene.h"
+#include "ray_tracing.h"
 using namespace std;
 
 int main() {
@@ -79,5 +82,38 @@ int main() {
     cout << image.get_triangle_count() << endl;
      */
 
+    /// ===== RAY TRACING TESTS =====
+    scene image(0, 100, 0, 100);
+    for(int i=0; i<5; i++){
+        image.generate_triangle();
+    }
+    ray_tracing ray_tracing(image);
+    sf::Image result = ray_tracing.render();
+
+    // Saving result
+    sf::Vector2u size = result.getSize();
+    std::cout << "Image dimensions " << size.x << " x " << size.y << std::endl;
+
+    // Check if the image contains any pixel data
+    if (size.x == 0 || size.y == 0) {
+        std::cerr << "Error: Image is empty (no size or pixel data)." << std::endl;
+        return -1;
+    }
+    // Making sure the output directory is present
+    cout << "Current working directory: "<< filesystem::current_path() << endl;
+    string outputDir = "output";
+    if (!filesystem::exists(outputDir)) {
+        if (!filesystem::create_directory(outputDir)) {
+            std::cerr << "Failure creating output directory: " << outputDir << std::endl;
+            return -1;
+        }
+    }
+    // Saving ray tracing rendering
+    string filePath = outputDir + "/ray_tracing.png";
+    if (result.saveToFile(filePath)) {
+        std::cout << "Ray tracing rendering saved as \"ray_tracing.png\"" << std::endl;
+    } else {
+        std::cerr << "Failed attempt to save ray tracing rendering" << std::endl;
+    }
     return 0;
 }

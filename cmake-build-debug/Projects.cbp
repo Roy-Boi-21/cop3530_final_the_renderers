@@ -5,98 +5,174 @@
 		<Option title="Projects"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\Libraries\;CMake Files\..\..\..\Libraries\SFML-2.5.1\;CMake Files\..\..\..\Libraries\SFML-2.5.1\lib\;CMake Files\..\..\..\Libraries\SFML-2.5.1\lib\cmake\;CMake Files\..\..\..\Libraries\SFML-2.5.1\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug"/>
+				<Option working_dir="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Projects">
-				<Option output="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Projects.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug"/>
+				<Option output="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Projects.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Libraries/SFML-2.5.1/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projects"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projects"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Projects/fast">
-				<Option output="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Projects.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug"/>
+				<Option output="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Projects.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Libraries/SFML-2.5.1/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projects/fast"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projects/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ray_tracing">
+				<Option output="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/libray_tracing.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Libraries/SFML-2.5.1/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 ray_tracing"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ray_tracing/fast">
+				<Option output="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/libray_tracing.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Libraries/SFML-2.5.1/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 ray_tracing/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug"/>
+				<Option working_dir="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug"/>
+				<Option working_dir="C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/main.cpp">
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/main.cpp">
 			<Option target="Projects"/>
 		</Unit>
-		<Unit filename="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/scene.cpp">
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/ray_tracing.cpp">
+			<Option target="Projects"/>
+			<Option target="ray_tracing"/>
+		</Unit>
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/ray_tracing.h">
+			<Option target="Projects"/>
+			<Option target="ray_tracing"/>
+		</Unit>
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/scene.cpp">
 			<Option target="Projects"/>
 		</Unit>
-		<Unit filename="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/scene.h">
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/scene.h">
 			<Option target="Projects"/>
 		</Unit>
-		<Unit filename="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/triangle.cpp">
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/triangle.cpp">
 			<Option target="Projects"/>
 		</Unit>
-		<Unit filename="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/triangle.h">
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/triangle.h">
 			<Option target="Projects"/>
 		</Unit>
-		<Unit filename="C:/Users/roybo/OneDrive/Documents/Sophomore Year/COP3530/Projects/cop3530_final_the_renderers/CMakeLists.txt">
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/../../../Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Libraries\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/../../../Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Libraries\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/../../../Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Libraries\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/../../../Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Libraries\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/../../../Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Libraries\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/cynth/cop3530_final_the_renderers/../../../Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Libraries\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
