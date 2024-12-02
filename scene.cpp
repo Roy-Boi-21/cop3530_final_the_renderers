@@ -66,14 +66,17 @@ void scene::generate_triangle() {
     unsigned seed = chrono::system_clock::now().time_since_epoch().count();
     mt19937 generator(seed);
     vector<pair<int, int>> vertices;
+    vector<unsigned char> colors;
     for (int i = 0; i < 3; i++) {
         int x = int(generator() % (x_boundary.second - x_boundary.first)) + x_boundary.first;
         int y = int(generator() % (y_boundary.second - y_boundary.first)) + y_boundary.first;
+        unsigned char color = char(unsigned(generator() % 255));
         vertices.emplace_back(x, y);
+        colors.emplace_back(color);
     }
 
     // Create the triangle and add it to the scene.
-    triangle new_triangle(vertices);
+    triangle new_triangle(vertices, colors);
     triangles[triangles.size()] = new_triangle;
 }
 
