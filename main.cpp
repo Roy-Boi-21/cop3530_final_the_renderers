@@ -83,22 +83,25 @@ int main() {
      */
 
     /// ===== RAY TRACING TESTS =====
-    scene image(0, 50, 0, 50);
+    // Change values here
+    int image_width = 200;
+    int image_height = 200;
+    scene image(0, image_width, 0, image_height);
 
-    for(int i=0; i<1; i++){
+    for(int i=0; i<5; i++){
         image.generate_triangle();
     }
 
     //Debugging
     auto triangles = image.get_triangles();
     for (auto triangle : triangles) {
-        cout << triangle.second.get_points().size() << endl;
+        //cout << triangle.second.get_points().size() << endl;
         cout<<"Vertices:";
         for(int i=0; i<3; i++){
             int vertices_x = triangle.second.get_points()[i].first;
             int vertices_y = triangle.second.get_points()[i].second;
             cout<<" ("<<vertices_x<<", "<<vertices_y<<") ";
-            cout<<triangle.second.point_in_bounds(vertices_x, vertices_y);
+            //cout<<triangle.second.point_in_bounds(vertices_x, vertices_y);
         }
         cout<<endl;
 

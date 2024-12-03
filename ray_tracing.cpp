@@ -37,7 +37,9 @@ sf::Image ray_tracing::render(sf::Color background_color) {
                 triangle current_triangle = triangles[current];
                 rendering.setPixel(x, y, background_color);
                 pair<int, int> point(x,y);
-                if(current_triangle.point_in_bounds(point)){
+                // bool in_bounds = current_triangle.point_in_bounds(point);
+                bool in_bounds = current_triangle.area_test(point);
+                if(in_bounds){
                     unsigned char* triangleColor = current_triangle.get_colors();
                     sf::Color pixel_color(triangleColor[0], triangleColor[1], triangleColor[2]);
                     rendering.setPixel(x, y, pixel_color);
@@ -56,6 +58,7 @@ sf::Image ray_tracing::render(sf::Color background_color) {
                         }
                     }
                     // Debug statements
+                    /*
                     cout<<"Triangle #"<<current<<" at pixel ("<<x<<", "<<y<<") Set to color ";
                     if(vertices){
                         cout<<"VERTICES";
@@ -66,7 +69,7 @@ sf::Image ray_tracing::render(sf::Color background_color) {
                         }
                     }
                     cout<<endl;
-
+                    */
                     break;
                 }
             }
