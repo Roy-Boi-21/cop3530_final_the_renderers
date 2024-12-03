@@ -21,6 +21,6 @@ CMake Deprecation Warning:
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Found SFML 2.5.1 in C:/Libraries/SFML-2.5.1/lib/cmake/SFML
--- Configuring done (9.8s)
+-- Configuring done (9.1s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/cynth/cop3530_final_the_renderers/cmake-build-debug

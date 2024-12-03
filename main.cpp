@@ -1,5 +1,6 @@
 #include <iostream>
 #include <filesystem>
+#include <chrono>
 #include <SFML/Graphics/Image.hpp>
 #include "scene.h"
 #include "ray_tracing.h"
@@ -86,6 +87,7 @@ int main() {
     // Change values here
     int image_width = 200;
     int image_height = 200;
+    sf::Color background_color(255,255,0);
     scene image(0, image_width, 0, image_height);
 
     for(int i=0; i<5; i++){
@@ -100,7 +102,7 @@ int main() {
         for(int i=0; i<3; i++){
             int vertices_x = triangle.second.get_points()[i].first;
             int vertices_y = triangle.second.get_points()[i].second;
-            cout<<" ("<<vertices_x<<", "<<vertices_y<<") ";
+            cout<<" ("<<vertices_x<<", "<<vertices_y<<")\t";
             //cout<<triangle.second.point_in_bounds(vertices_x, vertices_y);
         }
         cout<<endl;
@@ -108,19 +110,23 @@ int main() {
     }
 
     // Rendering
+    auto start = chrono::high_resolution_clock::now(); //start timing
     ray_tracing ray_tracing(image);
-    sf::Color background_color(255,255,0);
     sf::Image result = ray_tracing.render(background_color);
+    auto stop = chrono::high_resolution_clock::now(); //end timing
 
     // Saving result
+    auto duration = chrono::duration_cast<chrono::microseconds>(stop - start);
     sf::Vector2u size = result.getSize();
     std::cout << "Image dimensions " << size.x << " x " << size.y << std::endl;
+    std::cout<< "Ray tracing rendering time: \t"<< duration.count()<< " microseconds."<<endl;
 
-    // Check if the image contains any pixel data
-    if (size.x == 0 || size.y == 0) {
-        std::cerr << "Error: Image is empty (no size or pixel data)." << std::endl;
-        return -1;
-    }
+//    // Check if the image contains any pixel data
+//    if (size.x == 0 || size.y == 0) {
+//        std::cerr << "Error: Image is empty (no size or pixel data)." << std::endl;
+//        return -1;
+//    }
+
     // Making sure the output directory is present
     cout << "Current working directory: "<< filesystem::current_path() << endl;
     string outputDir = "output";
@@ -130,7 +136,7 @@ int main() {
             return -1;
         }
     }
-    // Saving ray tracing rendering
+    // Saving rendering
     string filePath = outputDir + "/ray_tracing.png";
     if (result.saveToFile(filePath)) {
         std::cout << "Ray tracing rendering saved as \"ray_tracing.png\"" << std::endl;
