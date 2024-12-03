@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Projects",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Projects::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Projects-Debug-b905e2dab5c3164cd0b6.json",
+					"name" : "Projects",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ray_tracing::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ray_tracing-Debug-f5998b24a40bffa264ed.json",
+					"name" : "ray_tracing",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/JohnB/OneDrive - University of Florida/cop3530_final_the_renderers/cmake-build-debug",
+		"source" : "C:/Users/JohnB/OneDrive - University of Florida/cop3530_final_the_renderers"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
