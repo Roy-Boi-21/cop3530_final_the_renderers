@@ -35,6 +35,8 @@ public:
     // Class Functions.
     bool point_in_bounds(int x, int y);
     bool point_in_bounds(pair<int, int> point);
+    bool area_test(int x, int y);
+    bool area_test(pair<int, int> point);
     vector<pair<int, int>> get_points();
     unsigned char* get_colors();
     void set_colors(unsigned char red, unsigned char green, unsigned char blue);

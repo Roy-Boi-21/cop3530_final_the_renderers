@@ -3,6 +3,7 @@
 //
 
 #include "triangle.h"
+#include <cmath>
 using namespace std;
 
 /// ===== CONSTRUCTORS =====
@@ -37,7 +38,7 @@ triangle::triangle() {
  * - The x coordinate of the third vertex.      (Integer)
  * - The y coordinate of the third vertex.      (Integer)
  */
-triangle::triangle(int x1=0, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0) {
+triangle::triangle(int x1, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0) {
     // Create the vertices of the triangle.
     points.reserve(3);
     points[0].first = x1;
@@ -102,7 +103,7 @@ triangle::triangle(vector<pair<int, int>> _points) {
  * - The green value of the triangle.           (Unsigned character)
  * - The blue value of the triangle.            (Unsigned character)
  */
-triangle::triangle(int x1=0, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0,
+triangle::triangle(int x1, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0,
                    unsigned char red=0, unsigned char green=0, unsigned char blue=0) {
     // Create the vertices of the triangle.
     points.reserve(3);
@@ -239,9 +240,11 @@ bool triangle::calculate_middle_orientation() {
  */
 bool triangle::point_in_bounds(int x, int y) {
     // Check if the x coordinate is outside the triangle's width.
-    if (!(x >= points[0].first) || !(x <= points[2].first)) {
+    /*
+    if (x < points[0].first || x > points[2].first) {
         return false;
     }
+     */
 
     // Get the slope from the two end points.
     float large_slope = calculate_slope(points[0], points[2]);
@@ -342,4 +345,49 @@ void triangle::set_colors(unsigned char red, unsigned char green, unsigned char 
     colors[0] = red;
     colors[1] = green;
     colors[2] = blue;
+}
+
+/* Area
+ *
+ * A utility function to calculate area of triangle formed by (x1, y1),
+ * (x2, y2) and (x3, y3)
+ *
+ * Source: https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/
+ */
+float area(int x1, int y1, int x2, int y2, int x3, int y3)
+{
+    return abs((x1*(y2-y3) + x2*(y3-y1)+ x3*(y1-y2))/2.0);
+}
+
+/* Area test
+ *
+ * This function takes in two coordinates and checks whether the coordinates are within the triangle
+ * using their areas.
+ * Source:
+ * https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/
+ *
+ * Parameters:
+ * - The point's x and y position.  (Pair of integers)
+ * Returns: Whether the point is within the triangle.   (Boolean)
+ */
+bool triangle::area_test(int x, int y) {
+    /* Calculate area of triangle ABC */
+    float A = area (points[0].first, points[0].second, points[1].first, points[1].second, points[2].first, points[2].second);
+
+    /* Calculate area of triangle PBC */
+    float A1 = area (x, y, points[1].first, points[1].second, points[2].first, points[2].second);
+
+    /* Calculate area of triangle PAC */
+    float A2 = area (points[0].first, points[0].second, x, y, points[2].first, points[2].second);
+
+    /* Calculate area of triangle PAB */
+    float A3 = area (points[0].first, points[0].second, points[1].first, points[1].second, x, y);
+
+    /* Check if sum of A1, A2 and A3 is same as A */
+    return (A == A1 + A2 + A3);
+
+}
+
+bool triangle::area_test(pair<int, int> point) {
+    return area_test(point.first, point.second);
 }

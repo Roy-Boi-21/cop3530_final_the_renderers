@@ -165,6 +165,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projects.dir\build.make CMakeFiles/Projects.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rasterization.obj: rasterization.cpp.obj
+.PHONY : rasterization.obj
+
+# target to build an object file
+rasterization.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projects.dir\build.make CMakeFiles/Projects.dir/rasterization.cpp.obj
+.PHONY : rasterization.cpp.obj
+
+rasterization.i: rasterization.cpp.i
+.PHONY : rasterization.i
+
+# target to preprocess a source file
+rasterization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projects.dir\build.make CMakeFiles/Projects.dir/rasterization.cpp.i
+.PHONY : rasterization.cpp.i
+
+rasterization.s: rasterization.cpp.s
+.PHONY : rasterization.s
+
+# target to generate assembly for a file
+rasterization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projects.dir\build.make CMakeFiles/Projects.dir/rasterization.cpp.s
+.PHONY : rasterization.cpp.s
+
 ray_tracing.obj: ray_tracing.cpp.obj
 .PHONY : ray_tracing.obj
 
@@ -253,6 +277,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... rasterization.obj
+	@echo ... rasterization.i
+	@echo ... rasterization.s
 	@echo ... ray_tracing.obj
 	@echo ... ray_tracing.i
 	@echo ... ray_tracing.s
