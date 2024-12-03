@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libray_tracing.a CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj
+C:\mingw64\bin\ranlib.exe libray_tracing.a

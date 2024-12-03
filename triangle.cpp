@@ -37,7 +37,7 @@ triangle::triangle() {
  * - The x coordinate of the third vertex.      (Integer)
  * - The y coordinate of the third vertex.      (Integer)
  */
-triangle::triangle(int x1=0, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0) {
+triangle::triangle(int x1, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0) {
     // Create the vertices of the triangle.
     points.reserve(3);
     points[0].first = x1;
@@ -102,7 +102,7 @@ triangle::triangle(vector<pair<int, int>> _points) {
  * - The green value of the triangle.           (Unsigned character)
  * - The blue value of the triangle.            (Unsigned character)
  */
-triangle::triangle(int x1=0, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0,
+triangle::triangle(int x1, int y1=0, int x2=0, int y2=0, int x3=0, int y3=0,
                    unsigned char red=0, unsigned char green=0, unsigned char blue=0) {
     // Create the vertices of the triangle.
     points.reserve(3);
@@ -239,9 +239,11 @@ bool triangle::calculate_middle_orientation() {
  */
 bool triangle::point_in_bounds(int x, int y) {
     // Check if the x coordinate is outside the triangle's width.
-    if (!(x >= points[0].first) || !(x <= points[2].first)) {
+    /*
+    if (x < points[0].first || x > points[2].first) {
         return false;
     }
+     */
 
     // Get the slope from the two end points.
     float large_slope = calculate_slope(points[0], points[2]);
