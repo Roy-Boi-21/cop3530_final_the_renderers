@@ -15,21 +15,39 @@ class window {
     bool clicked = false;
 
     sf::RenderWindow* application_window;
+    sf::Font font;
+    sf::Text rt_text;
+    sf::Text ras_text;
     sf::Event event;
     sf::Mouse mouse;
 
-    sf::Sprite randomizeTriangles;
-    sf::Sprite rtButton;
-    sf::Sprite rasButton;
-    sf::Sprite rtImage;
-    sf::Sprite rasImage;
-    sf::Sprite rtTime;
-    sf::Sprite rasTime;
+    sf::Sprite rand_Triangles;
+    sf::Sprite rt_button;
+    sf::Sprite ras_button;
+    sf::Sprite rt_image;
+    sf::Sprite ras_image;
+    sf::Sprite rt_time;
+    sf::Sprite ras_time;
+
+    sf::Texture rt_tex;
+    sf::Texture ras_tex;
+
+    vector<scene> images;
+    vector<sf::Image> rt_results;
+    vector<sf::Image> ras_results;
+    long long rt_total_time;
+    long long ras_total_time;
+    bool displaying_rt;
+
 
 
 public:
-    window(sf::RenderWindow& window);
-    void resetWindow();
+    window(sf::RenderWindow& window, map<string, sf::Texture> &texture_map, int image_width, int image_height, sf::Color backround_color);
+    void randomizeTriangles();
+    void whileRunning();
+    bool buttonClick(sf::Sprite &button, float position_x, float position_y);
+    void draw();
+    void setText(sf::Text &text, float x, float y);
 
 };
 

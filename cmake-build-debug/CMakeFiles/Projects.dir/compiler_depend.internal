@@ -304,7 +304,9 @@ CMakeFiles/Projects.dir/main.cpp.obj
  C:/Users/JohnB/OneDrive - University of Florida/cop3530_final_the_renderers/rasterization.h
  C:/Users/JohnB/OneDrive - University of Florida/cop3530_final_the_renderers/ray_tracing.h
  C:/Users/JohnB/OneDrive - University of Florida/cop3530_final_the_renderers/scene.h
+ C:/Users/JohnB/OneDrive - University of Florida/cop3530_final_the_renderers/texture.h
  C:/Users/JohnB/OneDrive - University of Florida/cop3530_final_the_renderers/triangle.h
+ C:/Users/JohnB/OneDrive - University of Florida/cop3530_final_the_renderers/window.h
 
 CMakeFiles/Projects.dir/rasterization.cpp.obj
  C:/Users/JohnB/OneDrive - University of Florida/cop3530_final_the_renderers/rasterization.cpp

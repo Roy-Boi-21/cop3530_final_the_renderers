@@ -6,6 +6,8 @@
 #include "scene.h"
 #include "ray_tracing.h"
 #include "rasterization.h"
+#include "texture.h"
+#include "window.h"
 
 using namespace std;
 
@@ -90,7 +92,10 @@ int main() {
     // Change values here
     int image_width = 900;
     int image_height = 900;
-    sf::Color background_color(255,255,0);
+    texture texture_class;
+    map<string, sf::Texture> textureMap = texture_class.getTextMap();
+
+    sf::Color background_color(0,0,0);
     scene image(0, image_width, 0, image_height);
 
     for(int i=0; i<5; i++){
@@ -159,34 +164,14 @@ int main() {
         cerr << "Failed attempt to save rasterization rendering" << endl;
     }
 
-    sf::Texture rendering_image;
-    rendering_image.loadFromFile("output/ray_tracing.png");
-    sf::Sprite main_image;
-    main_image.setTexture(rendering_image);
-    main_image.setPosition(0,0);
-
-    sf::Texture button_texture;
-    button_texture.loadFromFile("files/images/Button.png");
-    sf::Sprite button;
-    button.setTexture(button_texture);
-    button.setPosition(460, 50);
-
     sf::RenderWindow application_window(sf::VideoMode(1200,1200), "Ray-Tracing vs Rasterization", sf::Style::Close);
     application_window.setVerticalSyncEnabled(true);
 
-    sf::Event event;
+    window window_screen(application_window, textureMap, image_width, image_height, background_color);
 
     while(application_window.isOpen()) {
-        //This wasn't working until I put this in and it somehow fixed it I hate computers
-        while(application_window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed) {
-                application_window.close();
-            }
-        }
-        application_window.clear(sf::Color(128,128,128,255));
-        application_window.draw(main_image);
-        application_window.draw(button);
-        application_window.display();
+        window_screen.whileRunning();
+        window_screen.draw();
     }
 
 

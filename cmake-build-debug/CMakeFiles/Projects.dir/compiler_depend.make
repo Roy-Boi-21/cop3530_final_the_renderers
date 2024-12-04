@@ -303,7 +303,9 @@ CMakeFiles/Projects.dir/main.cpp.obj: C:/Users/JohnB/OneDrive\ -\ University\ of
   C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/rasterization.h \
   C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/ray_tracing.h \
   C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/scene.h \
-  C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/triangle.h
+  C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/texture.h \
+  C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/triangle.h \
+  C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/window.h
 
 CMakeFiles/Projects.dir/rasterization.cpp.obj: C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/rasterization.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
@@ -2009,6 +2011,8 @@ C:/SFML/include/SFML/Window/Window.hpp:
 C:/SFML/include/SFML/Window/WindowStyle.hpp:
 
 C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/ray_tracing.h:
+
+C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/texture.h:
 
 C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/triangle.h:
 
