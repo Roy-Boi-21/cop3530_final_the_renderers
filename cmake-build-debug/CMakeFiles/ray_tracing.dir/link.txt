@@ -1,2 +1,2 @@
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc libray_tracing.a CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ranlib.exe libray_tracing.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc libray_tracing.a CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ranlib.exe libray_tracing.a

@@ -18,8 +18,11 @@ add_executable(Projects main.cpp
         ray_tracing.h
         ray_tracing.h
         rasterization.cpp
-        rasterization.h)
+        rasterization.h
+        window.cpp
+        window.h
+        window.h)
 add_library(ray_tracing ray_tracing.h
         ray_tracing.cpp)
-target_link_libraries(ray_tracing sfml-graphics sfml-audio)
-target_link_libraries(Projects sfml-graphics sfml-audio)
+target_link_libraries(ray_tracing sfml-window sfml-graphics sfml-audio)
+target_link_libraries(Projects sfml-window sfml-graphics sfml-audio)

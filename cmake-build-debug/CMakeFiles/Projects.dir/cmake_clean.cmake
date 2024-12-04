@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Projects.dir/scene.cpp.obj.d"
   "CMakeFiles/Projects.dir/triangle.cpp.obj"
   "CMakeFiles/Projects.dir/triangle.cpp.obj.d"
+  "CMakeFiles/Projects.dir/window.cpp.obj"
+  "CMakeFiles/Projects.dir/window.cpp.obj.d"
   "Projects.exe"
   "Projects.exe.manifest"
   "Projects.pdb"

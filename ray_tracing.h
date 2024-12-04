@@ -18,12 +18,16 @@ class ray_tracing {
     int width;
     int height;
     sf::Image rendering;
+    long long duration;
+
 public:
     // Constructors
     explicit ray_tracing(scene src);
 
     // Class functions
     sf::Image render(sf::Color backgrorund_color);
+
+    long long getDuration();
 };
 
 

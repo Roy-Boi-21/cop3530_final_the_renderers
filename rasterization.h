@@ -18,6 +18,7 @@ class rasterization {
     int width;
     int height;
     sf::Image rendering;
+    long long duration;
 
 public:
     //Constructors
@@ -25,6 +26,8 @@ public:
 
     //Class functions
     sf::Image render();
+
+    long long getDuration();
 };
 
 

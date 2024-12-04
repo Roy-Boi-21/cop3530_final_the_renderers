@@ -3,6 +3,7 @@
 //
 
 #include "ray_tracing.h"
+#include <chrono>
 using namespace std;
 
 /// ===== CONSTRUCTORS =====
@@ -28,6 +29,7 @@ ray_tracing::ray_tracing(scene src) {
 }
 
 sf::Image ray_tracing::render(sf::Color background_color) {
+    auto start = chrono::high_resolution_clock ::now(); //Start timer
     //Iterate each pixel
     for(int y=0; y<height; y++){
         for(int x=0; x<width; x++){
@@ -75,6 +77,12 @@ sf::Image ray_tracing::render(sf::Color background_color) {
             }
         }
     }
-
+    auto stop = chrono::high_resolution_clock ::now(); //end timer
+    auto time_elapsed = chrono::duration_cast<chrono::microseconds>(stop-start);
+    duration = time_elapsed.count();
     return rendering;
+}
+
+long long ray_tracing::getDuration() {
+    return duration;
 }
