@@ -300,8 +300,6 @@ CMakeFiles/Projects.dir/main.cpp.obj: C:/Users/JohnB/OneDrive\ -\ University\ of
   C:/SFML/include/SFML/Window/Window.hpp \
   C:/SFML/include/SFML/Window/WindowHandle.hpp \
   C:/SFML/include/SFML/Window/WindowStyle.hpp \
-  C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/rasterization.h \
-  C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/ray_tracing.h \
   C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/scene.h \
   C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/texture.h \
   C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/triangle.h \
@@ -2027,8 +2025,6 @@ C:/SFML/include/SFML/Window/Window.hpp:
 
 C:/SFML/include/SFML/Window/WindowStyle.hpp:
 
-C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/ray_tracing.h:
-
 C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/texture.h:
 
 C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/triangle.h:
@@ -2036,5 +2032,7 @@ C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/
 C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/rasterization.cpp:
 
 C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/ray_tracing.cpp:
+
+C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/ray_tracing.h:
 
 C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/triangle.cpp:
