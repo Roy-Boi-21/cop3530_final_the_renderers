@@ -12,7 +12,10 @@
 using namespace std;
 
 class window {
-    bool clicked = false;
+    //Class variables
+    int img_width;
+    int img_height;
+    sf::Color bg_color;
 
     sf::RenderWindow* application_window;
     sf::Font font;
@@ -33,8 +36,6 @@ class window {
     sf::Texture ras_tex;
 
     vector<scene> images;
-    vector<sf::Image> rt_results;
-    vector<sf::Image> ras_results;
     long long rt_total_time;
     long long ras_total_time;
     bool displaying_rt;
@@ -42,7 +43,10 @@ class window {
 
 
 public:
+    //Constructor
     window(sf::RenderWindow& window, map<string, sf::Texture> &texture_map, int image_width, int image_height, sf::Color backround_color);
+
+    //Class methods
     void randomizeTriangles();
     void whileRunning();
     bool buttonClick(sf::Sprite &button, float position_x, float position_y);

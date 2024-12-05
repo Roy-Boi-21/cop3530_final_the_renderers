@@ -11,6 +11,7 @@ using namespace std;
 #ifndef PROJECTS_TEXTURE_H
 #define PROJECTS_TEXTURE_H
 
+//Class to store all the textures used by the UI
 struct texture{
     map<string, sf::Texture> texture_storage;
     texture(){
@@ -30,9 +31,10 @@ struct texture{
         rayTimeTex.loadFromFile("files/images/Ray Time.png");
         texture_storage.emplace("Ray Time", rayTimeTex);
         sf::Texture blankTex;
-        blankTex.loadFromFile("output/Blank.png");
         texture_storage.emplace("Blank", blankTex);
     }
+
+    //Returns texture map
     map<string,sf::Texture> getTextMap() const{
         return texture_storage;
     }

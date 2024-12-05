@@ -39,7 +39,6 @@ sf::Image ray_tracing::render(sf::Color background_color) {
                 triangle current_triangle = triangles[current];
                 rendering.setPixel(x, y, background_color);
                 pair<int, int> point(x,y);
-                // bool in_bounds = current_triangle.point_in_bounds(point);
                 bool in_bounds = current_triangle.area_test(point);
                 if(in_bounds){
                     unsigned char* triangleColor = current_triangle.get_colors();
@@ -47,6 +46,7 @@ sf::Image ray_tracing::render(sf::Color background_color) {
                     rendering.setPixel(x, y, pixel_color);
                     // Debugging
                     // Coloring vertices 1r, 2g, 3b
+                    /*
                     bool vertices = false;
                     int vertices_x, vertices_y;
                     vector<sf::Color> vertices_color= {sf::Color(255, 0, 0), sf::Color(0, 255, 0), sf::Color(0, 0, 255)};
@@ -59,18 +59,6 @@ sf::Image ray_tracing::render(sf::Color background_color) {
                             break;
                         }
                     }
-                    // Debug statements
-                    /*
-                    cout<<"Triangle #"<<current<<" at pixel ("<<x<<", "<<y<<") Set to color ";
-                    if(vertices){
-                        cout<<"VERTICES";
-                    }
-                    else{
-                        for (int i = 0; i < 3; ++i) {
-                            cout << static_cast<int>(triangleColor[i])<<" ";
-                        }
-                    }
-                    cout<<endl;
                     */
                     break;
                 }
@@ -83,6 +71,7 @@ sf::Image ray_tracing::render(sf::Color background_color) {
     return rendering;
 }
 
+//Returns the time it took to perform the rendering
 long long ray_tracing::getDuration() {
     return duration;
 }

@@ -50,6 +50,7 @@ sf::Image rasterization::render() {
     return rendering;
 }
 
+//Returns the time it took to perform the rendering
 long long rasterization::getDuration() {
     return duration;
 }
