@@ -47,18 +47,18 @@ sf::Image ray_tracing::render(sf::Color background_color) {
                     rendering.setPixel(x, y, pixel_color);
                     // Debugging
                     // Coloring vertices 1r, 2g, 3b
-                    bool vertices = false;
-                    int vertices_x, vertices_y;
-                    vector<sf::Color> vertices_color= {sf::Color(255, 0, 0), sf::Color(0, 255, 0), sf::Color(0, 0, 255)};
-                    for(int i=0; i<3; i++){
-                        vertices_x = current_triangle.get_points()[i].first;
-                        vertices_y = current_triangle.get_points()[i].second;
-                        if(vertices_x == x and vertices_y == y){
-                            rendering.setPixel(x, y, vertices_color[i]);
-                            vertices = true;
-                            break;
-                        }
-                    }
+//                    bool vertices = false;
+//                    int vertices_x, vertices_y;
+//                    vector<sf::Color> vertices_color= {sf::Color(255, 0, 0), sf::Color(0, 255, 0), sf::Color(0, 0, 255)};
+//                    for(int i=0; i<3; i++){
+//                        vertices_x = current_triangle.get_points()[i].first;
+//                        vertices_y = current_triangle.get_points()[i].second;
+//                        if(vertices_x == x and vertices_y == y){
+//                            rendering.setPixel(x, y, vertices_color[i]);
+//                            vertices = true;
+//                            break;
+//                        }
+//                    }
                     // Debug statements
                     /*
                     cout<<"Triangle #"<<current<<" at pixel ("<<x<<", "<<y<<") Set to color ";

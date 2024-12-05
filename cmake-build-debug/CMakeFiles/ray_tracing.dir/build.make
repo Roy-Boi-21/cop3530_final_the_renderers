@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers"
+CMAKE_SOURCE_DIR = C:\Users\cynth\cop3530_final_the_renderers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\cynth\cop3530_final_the_renderers\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ray_tracing.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/ray_tracing.dir/flags.make
 
 CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj: CMakeFiles/ray_tracing.dir/flags.make
 CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj: CMakeFiles/ray_tracing.dir/includes_CXX.rsp
-CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj: C:/Users/JohnB/OneDrive\ -\ University\ of\ Florida/cop3530_final_the_renderers/ray_tracing.cpp
+CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj: C:/Users/cynth/cop3530_final_the_renderers/ray_tracing.cpp
 CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj: CMakeFiles/ray_tracing.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj -MF CMakeFiles\ray_tracing.dir\ray_tracing.cpp.obj.d -o CMakeFiles\ray_tracing.dir\ray_tracing.cpp.obj -c "C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers\ray_tracing.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\cynth\cop3530_final_the_renderers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj -MF CMakeFiles\ray_tracing.dir\ray_tracing.cpp.obj.d -o CMakeFiles\ray_tracing.dir\ray_tracing.cpp.obj -c C:\Users\cynth\cop3530_final_the_renderers\ray_tracing.cpp
 
 CMakeFiles/ray_tracing.dir/ray_tracing.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ray_tracing.dir/ray_tracing.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers\ray_tracing.cpp" > CMakeFiles\ray_tracing.dir\ray_tracing.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\cynth\cop3530_final_the_renderers\ray_tracing.cpp > CMakeFiles\ray_tracing.dir\ray_tracing.cpp.i
 
 CMakeFiles/ray_tracing.dir/ray_tracing.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ray_tracing.dir/ray_tracing.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers\ray_tracing.cpp" -o CMakeFiles\ray_tracing.dir\ray_tracing.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\cynth\cop3530_final_the_renderers\ray_tracing.cpp -o CMakeFiles\ray_tracing.dir\ray_tracing.cpp.s
 
 # Object files for target ray_tracing
 ray_tracing_OBJECTS = \
@@ -93,7 +93,7 @@ ray_tracing_EXTERNAL_OBJECTS =
 libray_tracing.a: CMakeFiles/ray_tracing.dir/ray_tracing.cpp.obj
 libray_tracing.a: CMakeFiles/ray_tracing.dir/build.make
 libray_tracing.a: CMakeFiles/ray_tracing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libray_tracing.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\cynth\cop3530_final_the_renderers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libray_tracing.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\ray_tracing.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ray_tracing.dir\link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/ray_tracing.dir/clean:
 .PHONY : CMakeFiles/ray_tracing.dir/clean
 
 CMakeFiles/ray_tracing.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers" "C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers" "C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers\cmake-build-debug" "C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers\cmake-build-debug" "C:\Users\JohnB\OneDrive - University of Florida\cop3530_final_the_renderers\cmake-build-debug\CMakeFiles\ray_tracing.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\cynth\cop3530_final_the_renderers C:\Users\cynth\cop3530_final_the_renderers C:\Users\cynth\cop3530_final_the_renderers\cmake-build-debug C:\Users\cynth\cop3530_final_the_renderers\cmake-build-debug C:\Users\cynth\cop3530_final_the_renderers\cmake-build-debug\CMakeFiles\ray_tracing.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ray_tracing.dir/depend
 
